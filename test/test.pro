@@ -6,3 +6,4 @@ LIBS+=-L../lib -lsyntax-highlighting
 INCLUDEPATH+=../lib
 
 SOURCES = \
+    main.cxx
