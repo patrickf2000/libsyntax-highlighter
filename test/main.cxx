@@ -1,6 +1,9 @@
 #include <iostream>
 #include <QStringList>
 #include <repository.hh>
+#include <QApplication>
+
+#include "testwindow.hh"
 
 int main(int argc, char **argv) {
     Repository *repo = new Repository;
@@ -10,4 +13,11 @@ int main(int argc, char **argv) {
         std::cout << names->at(i).toStdString() << std::endl;
     }
     std::cout << std::endl;
+
+    QApplication app(argc,argv);
+
+    TestWindow win;
+    win.show();
+
+    return app.exec();
 }

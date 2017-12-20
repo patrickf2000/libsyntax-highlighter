@@ -6,4 +6,11 @@ LIBS+=-L../lib -lsyntax-highlighting
 INCLUDEPATH+=../lib
 
 SOURCES = \
-    main.cxx
+    main.cxx \
+    testwindow.cxx
+
+FORMS += \
+    testwindow.ui
+
+HEADERS += \
+    testwindow.hh
