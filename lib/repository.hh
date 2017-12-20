@@ -32,7 +32,6 @@
 class Repository {
 public:
     explicit Repository();
-    explicit Repository(QString path);
     QString fileForName(QString name);
     QString getNameForFile(QString file);
     QString getFileByType(QString file);

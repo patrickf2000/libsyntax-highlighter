@@ -35,17 +35,13 @@
 
 using namespace tinyxml2;
 
-Repository::Repository(QString path) {
-    initConstructor(path);
-}
-
 #ifdef _WIN32
 Repository::Repository() {
     QString path = qgetenv("ProgramData");
     if (!path.endsWith("\\")) {
         path+="\\";
     }
-    path+="CppEditor\\syntax";
+    path+="syntax-highlighting";
     initConstructor(path);
 }
 #elif HAIKU_OS
@@ -54,7 +50,7 @@ Repository::Repository() {
 	if (!path.endsWith("/")) {
 		path+="/";	
 	}
-	path+="config/settings/CppEditor/syntax";
+    path+="config/syntax-highlighting";
 	if (!QDir(path).exists()) {
 		QDir().mkpath(path);	
 	}
@@ -62,7 +58,7 @@ Repository::Repository() {
 }
 #else
 Repository::Repository() {
-    initConstructor("/usr/local/share/CppEditor/syntax");
+    initConstructor("/usr/share/syntax-highlighting");
 }
 #endif
 
