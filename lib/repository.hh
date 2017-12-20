@@ -31,11 +31,23 @@
 
 class Repository {
 public:
+	/// Initialize the repository
+	/// This MUST be called first, as it performs functions needed to find the files.
     explicit Repository();
+	///
+	/// Returns the absolute path to the syntax file with given name.
     QString fileForName(QString name);
+	///
+	/// Returns the name based on the path to a specific syntax file
     QString getNameForFile(QString file);
+	///
+	/// Returns the absolute path to a syntax file based on the MIME type of the path passed in.
     QString getFileByType(QString file);
+	///
+	/// Returns all available syntax names.
     QStringList *allNames();
+	///
+	/// Returns all available syntax files.
     QStringList *allFiles();
 protected:
     QString getName(QString file);

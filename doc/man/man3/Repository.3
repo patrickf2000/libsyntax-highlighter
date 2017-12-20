@@ -1,0 +1,56 @@
+.TH "Repository" 3 "Wed Dec 20 2017" "Version 1.0" "libsyntax-highlighter" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Repository \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBRepository\fP ()"
+.br
+.ti -1c
+.RI "QString \fBfileForName\fP (QString name)"
+.br
+.RI "\fIReturns the absolute path to the syntax file with given name\&. \fP"
+.ti -1c
+.RI "QString \fBgetNameForFile\fP (QString file)"
+.br
+.RI "\fIReturns the name based on the path to a specific syntax file\&. \fP"
+.ti -1c
+.RI "QString \fBgetFileByType\fP (QString file)"
+.br
+.RI "\fIReturns the absolute path to a syntax file based on the MIME type of the path passed in\&. \fP"
+.ti -1c
+.RI "QStringList * \fBallNames\fP ()"
+.br
+.RI "\fIReturns all available syntax names\&. \fP"
+.ti -1c
+.RI "QStringList * \fBallFiles\fP ()"
+.br
+.RI "\fIReturns all available syntax files\&. \fP"
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "QString \fBgetName\fP (QString file)"
+.br
+.ti -1c
+.RI "bool \fBhasMime\fP (QString file, QString mime)"
+.br
+.ti -1c
+.RI "bool \fBhasExtension\fP (QString file, QString syntaxFile)"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Repository::Repository ()\fC [explicit]\fP"
+Initialize the repository This MUST be called first, as it performs functions needed to find the files\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for libsyntax-highlighter from the source code\&.

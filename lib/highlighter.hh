@@ -38,8 +38,17 @@
 class SyntaxHighlighter : public QSyntaxHighlighter {
     Q_OBJECT
 public:
+	/// Initializes a new syntax highlighter
+	/// @param doc
+	/// The QTextEdit's QTextDocument
+	/// @param File
+	/// The absolute path to the desired syntax file
     explicit SyntaxHighlighter(QTextDocument *doc, QString File);
+	///
+	/// Returns the current name for the current syntax highlighting file
     QString getCurrentName();
+	///
+	/// Returns the current syntax highlighting file being used.
     QString getCurrentFile();
 protected:
     void highlightBlock(const QString &text);
