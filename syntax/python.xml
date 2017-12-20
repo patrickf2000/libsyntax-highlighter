@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<syntax name="Python">
+	<mime type="text/x-python" />
+	<extension name=".py" />
+	<extension name=".pyw" />
+	<single>
+		<!--Keywords-->
+		<group>
+			<format color="#cc33ff" weight="75" />
+			<pattern>
+				<start>\b</start>
+				<end>\b</end>
+			</pattern>
+			<item>and</item>
+			<item>as</item>
+			<item>assert</item>
+			<item>break</item>
+			<item>class</item>
+			<item>continue</item>
+			<item>def</item>
+			<item>del</item>
+			<item>elif</item>
+			<item>else</item>
+			<item>except</item>
+			<item>finally</item>
+			<item>for</item>
+			<item>from</item>
+			<item>global</item>
+			<item>if</item>
+			<item>import</item>
+			<item>in</item>
+			<item>is</item>
+			<item>lambda</item>
+			<item>nonlocal</item>
+			<item>not</item>
+			<item>or</item>
+			<item>pass</item>
+			<item>raise</item>
+			<item>return</item>
+			<item>try</item>
+			<item>while</item>
+			<item>with</item>
+			<item>yield</item>
+		</group>
+		<!--datatypes-->
+		<group>
+			<format color="#33cc33" weight="75" />
+			<pattern>
+				<start>\b</start>
+				<end>\b</end>
+			</pattern>
+			<item>False></item>
+			<item>None</item>
+			<item>True</item>
+			<item>str</item>
+			<item>tuple</item>
+			<item>self</item>
+			<item>list</item>
+			<item>dict</item>
+			<item>super</item>
+			<item>__init__</item>
+		</group>
+		<!--Comments-->
+		<group>
+			<format color="#0066ff" weight="75" />
+			<pattern>
+				<start></start>
+				<end>[^\n]*</end>
+			</pattern>
+			<item>#</item>
+		</group>
+		<!--double quotes-->
+		<group>
+			<format color="#ff33cc" weight="75" />
+			<pattern>
+				<start>"</start>
+				<end>[^"]*"</end>
+			</pattern>
+			<item></item>
+		</group>
+		<!--single quotes-->
+		<group>
+			<format color="#ff33cc" weight="75" />
+			<pattern>
+				<start>'</start>
+				<end>[^']*'</end>
+			</pattern>
+			<item></item>
+		</group>
+	</single>
+</syntax> 

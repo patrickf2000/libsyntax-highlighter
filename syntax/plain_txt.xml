@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<syntax name="Plain Text">
+	<mime type="text/plain" />
+</syntax> 

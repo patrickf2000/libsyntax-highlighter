@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<syntax name=".desktop">
+	<mime type="application/x-desktop" />
+	<extension name=".desktop" />
+	<single>
+		<!--Elements-->
+		<group>
+			<format color="#009933" weight="75" />
+			<pattern>
+				<start>\b</start>
+				<end>\b</end>
+			</pattern>
+			<item>Type</item>
+			<item>Name</item>
+			<item>Exec</item>
+			<item>Version</item>
+			<item>Encoding</item>
+			<item>GenericName</item>
+			<item>NoDisplay</item>
+			<item>Comment</item>
+			<item>Icon</item>
+			<item>Hidden</item>
+			<item>OnlyShowIn</item>
+			<item>NotShowIn</item>
+			<item>Path</item>
+			<item>Terminal</item>
+			<item>MimeType</item>
+			<item>Categories</item>
+		</group>
+		<!--Comments-->
+		<group>
+			<format color="#0066ff" weight="75" />
+			<pattern>
+				<start></start>
+				<end>[^\n]*</end>
+			</pattern>
+			<item>#</item>
+		</group>
+		<!--Brackets-->
+		<group>
+			<format color="#ff0066" weight="75" />
+			<pattern>
+				<start>\[.*\]</start>
+				<end></end>
+			</pattern>
+			<item></item>
+		</group>
+	</single>
+</syntax> 

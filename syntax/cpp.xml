@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<syntax name="C++">
+	<mime type="text/x-c++src" />
+	<mime type="text/x-c++hdr" />
+	<extension name=".cc" />
+	<extension name=".cpp" />
+	<extension name=".cxx" />
+	<extension name=".C" />
+	<extension name=".c++" />
+	<extension name=".h" />
+	<extension name=".hh" />
+	<extension name=".hpp" />
+	<extension name=".hxx" />
+	<extension name=".h++" />
+	<single>
+		<!--operators-->
+		<group>
+			<format color="#cc33ff" weight="75" />
+			<pattern>
+				<start>\b</start>
+				<end>\b</end>
+			</pattern>
+			<item>and</item>
+			<item>and_eq</item>
+			<item>asm</item>
+			<item>bitand</item>
+			<item>bitor</item>
+			<item>break</item>
+			<item>case</item>
+			<item>catch</item>
+			<item>class</item>
+			<item>compl</item>
+			<item>const_cast</item>
+			<item>continue</item>
+			<item>default</item>
+			<item>delete</item>
+			<item>do</item>
+			<item>dynamic_cast</item>
+			<item>else</item>
+			<item>enum</item>
+			<item>false</item>
+			<item>for</item>
+			<item>friend</item>
+			<item>goto</item>
+			<item>if</item>
+			<item>namespace</item>
+			<item>new</item>
+			<item>not</item>
+			<item>not_eq</item>
+			<item>operator</item>
+			<item>or</item>
+			<item>or_eq</item>
+			<item>private</item>
+			<item>protected</item>
+			<item>public</item>
+			<item>return</item>
+			<item>sizeof</item>
+			<item>static_cast</item>
+			<item>struct</item>
+			<item>switch</item>
+			<item>template</item>
+			<item>this</item>
+			<item>throw</item>
+			<item>true</item>
+			<item>try</item>
+			<item>typedef</item>
+			<item>typeid</item>
+			<item>typename</item>
+			<item>union</item>
+			<item>using</item>
+			<item>virtual</item>
+			<item>while</item>
+			<item>xor</item>
+			<item>xor_eq</item>
+		</group>
+		<!--datatypes-->
+		<group>
+			<format color="#33cc33" weight="75" />
+			<pattern>
+				<start>\b</start>
+				<end>\b</end>
+			</pattern>
+			<item>auto</item>
+			<item>bool</item>
+			<item>char</item>
+			<item>const</item>
+			<item>double</item>
+			<item>explicit</item>
+			<item>export</item>
+			<item>extern</item>
+			<item>float</item>
+			<item>inline</item>
+			<item>int</item>
+			<item>long</item>
+			<item>mutable</item>
+			<item>register</item>
+			<item>short</item>
+			<item>signed</item>
+			<item>static</item>
+			<item>unsigned</item>
+			<item>void</item>
+			<item>volatile</item>
+			<item>wchar_t</item>	
+		</group>
+		<!--single-line comments-->
+		<group>
+			<format color="#0066ff" weight="75" />
+			<pattern>
+				<start></start>
+				<end>[^\n]*</end>
+			</pattern>
+			<item>//</item>
+		</group>
+		<!--preprocessor-->
+		<group>
+			<format color="#996600" weight="75" />
+			<pattern>
+				<start></start>
+				<end>[^\n]*</end>
+			</pattern>
+			<item>#</item>
+		</group>
+		<!--double quotes-->
+		<group>
+			<format color="#ff33cc" weight="75" />
+			<pattern>
+				<start>"</start>
+				<end>[^"]*"</end>
+			</pattern>
+			<item></item>
+		</group>
+		<!--single quotes-->
+		<group>
+			<format color="#ff33cc" weight="75" />
+			<pattern>
+				<start>'</start>
+				<end>[^']*'</end>
+			</pattern>
+			<item></item>
+		</group>
+	</single>
+	<multi>
+		<!--multiline comments-->
+		<group>
+			<format color="#0066ff" weight="75" />
+			<item>
+				<start>/\*</start>
+				<end>\*/</end>
+			</item>
+		</group>
+	</multi>
+</syntax>

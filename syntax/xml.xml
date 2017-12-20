@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<syntax name="XML">
+	<mime type="text/xml" />
+	<mime type="text/x-xml" />
+	<mime type="application/xml" />
+	<extension name=".xml" />
+	<single>
+		<!--General tags-->
+		<group>
+			<format color="#008060" weight="75" />
+			<pattern>
+				<start>&lt;[^&gt;]*&gt;</start>
+				<end></end>
+			</pattern>
+			<item></item>
+		</group>
+	</single>
+	<multi>
+		<!--comments-->
+		<group>
+			<format>
+				<color>#0066ff</color>
+				<weight>75</weight>
+			</format>
+			<item>
+				<start>&lt;!--</start>
+				<end>--&gt;</end>
+			</item>
+		</group>
+	</multi>
+</syntax> 
