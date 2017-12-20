@@ -11,11 +11,13 @@ var NAVTREEINDEX0 =
 "class_repository.html#acea749ed86f3239ecf20c696f721ab7e":[0,0,0,0],
 "class_repository.html#adba686c7b3372ad761566e993c810745":[0,0,0,3],
 "class_repository.html#ae485ace9d1be04211c3221300b5a2a58":[0,0,0,6],
-"class_syntax_highlighter.html":[0,0,1],
-"class_syntax_highlighter.html#a2633163bedde0a890f27d4d47614f1ad":[0,0,1,3],
-"class_syntax_highlighter.html#a3b589c2a912d66332fd79b5f36e4c249":[0,0,1,1],
-"class_syntax_highlighter.html#a757237abb846f5fe630f8c50ab50bc6c":[0,0,1,2],
-"class_syntax_highlighter.html#af3f5920d0692fdb6c1cebeba5e3e29a9":[0,0,1,0],
+"class_syntax_combo.html":[0,0,1],
+"class_syntax_combo.html#a5d7d13f9a4b847460415cf7b0e87e111":[0,0,1,0],
+"class_syntax_highlighter.html":[0,0,2],
+"class_syntax_highlighter.html#a2633163bedde0a890f27d4d47614f1ad":[0,0,2,3],
+"class_syntax_highlighter.html#a3b589c2a912d66332fd79b5f36e4c249":[0,0,2,1],
+"class_syntax_highlighter.html#a757237abb846f5fe630f8c50ab50bc6c":[0,0,2,2],
+"class_syntax_highlighter.html#af3f5920d0692fdb6c1cebeba5e3e29a9":[0,0,2,0],
 "classes.html":[0,1],
 "dir_97aefd0d527b934f1d99a682da8fe6a9.html":[1,0,0],
 "files.html":[1,0],
@@ -25,5 +27,6 @@ var NAVTREEINDEX0 =
 "highlighter_8hh_source.html":[1,0,0,0],
 "index.html":[],
 "pages.html":[],
-"repository_8hh_source.html":[1,0,0,1]
+"repository_8hh_source.html":[1,0,0,1],
+"syntax__combo_8hh_source.html":[1,0,0,2]
 };

@@ -32,10 +32,12 @@ TARGET=syntax-highlighting
 SOURCES = \
     highlighter.cxx \
     repository.cxx \
-    tinyxml2.cpp
+    tinyxml2.cpp \
+    syntax_combo.cxx
 
 HEADERS = \
     highlighter.hh \
     repository.hh \
     rules.hh \
-    tinyxml2.h
+    tinyxml2.h \
+    syntax_combo.hh

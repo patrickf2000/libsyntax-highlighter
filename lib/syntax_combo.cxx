@@ -24,30 +24,23 @@
 // WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
 // EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-#include <iostream>
 #include <QStringList>
-#include <repository.hh>
-#include <syntax_combo.hh>
-#include <QApplication>
 
-#include "testwindow.hh"
+#include "syntax_combo.hh"
+#include "repository.hh"
 
-int main(int argc, char **argv) {
+SyntaxCombo::SyntaxCombo() {
     Repository *repo = new Repository;
-    QStringList *names = repo->allNames();
-    std::cout << "Syntax Names:" << std::endl;
-    for (int i = 0; i<names->size(); i++) {
-        std::cout << names->at(i).toStdString() << std::endl;
+    QStringList *items = repo->allNames();
+    QStringList *comboItems = new QStringList;
+    for (int i = 0; i<items->size(); i++) {
+        if (items->at(i)=="Plain Text") {
+            comboItems->push_front(items->at(i));
+        } else {
+            comboItems->push_back(items->at(i));
+        }
     }
-    std::cout << std::endl;
-
-    QApplication app(argc,argv);
-
-    SyntaxCombo win1;
-    win1.show();
-
-    TestWindow win;
-    win.show();
-
-    return app.exec();
+    for (int i = 0; i<comboItems->size(); i++) {
+        this->addItem(comboItems->at(i));
+    }
 }

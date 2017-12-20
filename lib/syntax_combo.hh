@@ -24,30 +24,14 @@
 // WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
 // EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-#include <iostream>
-#include <QStringList>
-#include <repository.hh>
-#include <syntax_combo.hh>
-#include <QApplication>
+#pragma once
 
-#include "testwindow.hh"
+#include <QComboBox>
 
-int main(int argc, char **argv) {
-    Repository *repo = new Repository;
-    QStringList *names = repo->allNames();
-    std::cout << "Syntax Names:" << std::endl;
-    for (int i = 0; i<names->size(); i++) {
-        std::cout << names->at(i).toStdString() << std::endl;
-    }
-    std::cout << std::endl;
-
-    QApplication app(argc,argv);
-
-    SyntaxCombo win1;
-    win1.show();
-
-    TestWindow win;
-    win.show();
-
-    return app.exec();
-}
+class SyntaxCombo : public QComboBox {
+    Q_OBJECT
+public:
+    //Create a new syntax combo box
+    //
+    SyntaxCombo();
+};
