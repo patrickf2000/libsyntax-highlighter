@@ -9,7 +9,8 @@ cp ./libsyntax-highlighting.so.1 /usr/local/lib
 cp ./libsyntax-highlighting.so.1.0 /usr/local/lib
 cp ./libsyntax-highlighting.so.1.0.0 /usr/local/lib
 cd ../..
-cp lib/*.hh /usr/local/include
-cp lib/*.h /usr/local/include
+mkdir -p /usr/local/include/cpplib/syntax-highlighting
+cp lib/*.hh /usr/local/include/cpplib/syntax-highlighting
+cp lib/*.h /usr/local/include/cpplib/syntax-highlighting
 ldconfig
 echo "Done!"
