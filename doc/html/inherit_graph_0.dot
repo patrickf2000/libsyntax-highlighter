@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="Repository",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_repository.html"];
+  Node1 [label="CppLib::Repository",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_cpp_lib_1_1_repository.html"];
 }

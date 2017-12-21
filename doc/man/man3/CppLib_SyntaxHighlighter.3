@@ -1,0 +1,49 @@
+.TH "CppLib::SyntaxHighlighter" 3 "Thu Dec 21 2017" "Version 1.0" "libsyntax-highlighter" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CppLib::SyntaxHighlighter \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits QSyntaxHighlighter\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSyntaxHighlighter\fP (QTextDocument *doc, QString File)"
+.br
+.ti -1c
+.RI "QString \fBgetCurrentName\fP ()"
+.br
+.RI "\fIReturns the current name for the current syntax highlighting file\&. \fP"
+.ti -1c
+.RI "QString \fBgetCurrentFile\fP ()"
+.br
+.RI "\fIReturns the current syntax highlighting file being used\&. \fP"
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBhighlightBlock\fP (const QString &text)"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "SyntaxHighlighter::SyntaxHighlighter (QTextDocument * doc, QString File)\fC [explicit]\fP"
+Initializes a new syntax highlighter 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdoc\fP The QTextEdit's QTextDocument 
+.br
+\fIFile\fP The absolute path to the desired syntax file 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for libsyntax-highlighter from the source code\&.

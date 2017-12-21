@@ -1,10 +1,10 @@
 var hierarchy =
 [
     [ "QComboBox", null, [
-      [ "SyntaxCombo", "class_syntax_combo.html", null ]
+      [ "CppLib::SyntaxCombo", "class_cpp_lib_1_1_syntax_combo.html", null ]
     ] ],
     [ "QSyntaxHighlighter", null, [
-      [ "SyntaxHighlighter", "class_syntax_highlighter.html", null ]
+      [ "CppLib::SyntaxHighlighter", "class_cpp_lib_1_1_syntax_highlighter.html", null ]
     ] ],
-    [ "Repository", "class_repository.html", null ]
+    [ "CppLib::Repository", "class_cpp_lib_1_1_repository.html", null ]
 ];
