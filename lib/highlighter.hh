@@ -35,6 +35,8 @@
 
 #include "rules.hh"
 
+namespace CppLib {
+
 class SyntaxHighlighter : public QSyntaxHighlighter {
     Q_OBJECT
 public:
@@ -60,3 +62,5 @@ private:
     QVector<Rule> *getSingleSyntaxRules();
     QVector<MultilineCommentRule> *getMultilineSyntaxRules();
 };
+
+}

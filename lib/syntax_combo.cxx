@@ -29,6 +29,8 @@
 #include "syntax_combo.hh"
 #include "repository.hh"
 
+using namespace CppLib;
+
 SyntaxCombo::SyntaxCombo() {
     Repository *repo = new Repository;
     QStringList *items = repo->allNames();

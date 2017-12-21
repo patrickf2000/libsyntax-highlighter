@@ -28,6 +28,8 @@
 
 #include <QComboBox>
 
+namespace CppLib {
+
 class SyntaxCombo : public QComboBox {
     Q_OBJECT
 public:
@@ -35,3 +37,5 @@ public:
     //
     SyntaxCombo();
 };
+
+}

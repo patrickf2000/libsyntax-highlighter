@@ -32,6 +32,8 @@
 
 #include "testwindow.hh"
 
+using namespace CppLib;
+
 int main(int argc, char **argv) {
     Repository *repo = new Repository;
     QStringList *names = repo->allNames();

@@ -29,6 +29,8 @@
 #include <QStringList>
 #include <QString>
 
+namespace CppLib {
+
 class Repository {
 public:
 	/// Initialize the repository
@@ -59,3 +61,5 @@ private:
     void initConstructor(QString path);
     void load();
 };
+
+}

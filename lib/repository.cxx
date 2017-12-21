@@ -33,6 +33,7 @@
 #include "repository.hh"
 #include "tinyxml2.h"
 
+using namespace CppLib;
 using namespace tinyxml2;
 
 #ifdef _WIN32

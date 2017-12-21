@@ -30,6 +30,8 @@
 #include <repository.hh>
 #include <highlighter.hh>
 
+using namespace CppLib;
+
 TestWindow::TestWindow(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::TestWindow)

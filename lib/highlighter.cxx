@@ -31,6 +31,7 @@
 #include "highlighter.hh"
 #include "tinyxml2.h"
 
+using namespace CppLib;
 using namespace tinyxml2;
 
 SyntaxHighlighter::SyntaxHighlighter(QTextDocument *doc, QString File) : QSyntaxHighlighter(doc) {

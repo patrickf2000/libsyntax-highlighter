@@ -29,6 +29,8 @@
 #include <QString>
 #include <QTextCharFormat>
 
+namespace CppLib {
+
 struct Rule {
     QTextCharFormat format;
     QString pattern;
@@ -39,3 +41,5 @@ struct MultilineCommentRule {
     QString startPattern;
     QString endPattern;
 };
+
+}
