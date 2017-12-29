@@ -12,5 +12,7 @@ cd ../..
 mkdir -p /usr/local/include/cpplib/syntax-highlighting
 cp lib/*.hh /usr/local/include/cpplib/syntax-highlighting
 cp lib/*.h /usr/local/include/cpplib/syntax-highlighting
+mkdir -p /usr/share/syntax-highlighting
+cp ./syntax/*.xml /usr/share/syntax-highlighting
 ldconfig
 echo "Done!"
