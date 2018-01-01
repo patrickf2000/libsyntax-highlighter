@@ -26,8 +26,10 @@
 # EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 QT = core gui widgets
 TEMPLATE=lib
-CONFIG+=sharedlib
 TARGET=syntax-highlighting
+
+unix:CONFIG+=sharedlib
+win32:CONFIG+=staticlib
 
 SOURCES = \
     highlighter.cxx \

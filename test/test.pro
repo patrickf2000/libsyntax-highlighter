@@ -28,7 +28,8 @@ QT += core widgets gui
 TEMPLATE=app
 CONFIG+= c+11
 TARGET=testHighlighter
-LIBS+=-L../lib -lsyntax-highlighting
+unix:LIBS+=-L../lib -lsyntax-highlighting
+win32:LIBS+=-L../lib/debug -lsyntax-highlighting
 INCLUDEPATH+=../lib
 
 SOURCES = \
